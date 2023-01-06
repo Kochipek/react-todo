@@ -20,7 +20,7 @@ function App() {
     setTodo("");  // reset the todo state to an empty string
   };
   
-
+  
   const deleteTask = (id) => {
     setTodoList(todoList.filter((task) => task.id !== id));
   };
