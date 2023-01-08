@@ -3,15 +3,8 @@ import { useState } from "react";
 import Task from "./components/Task";
 import Form from "./components/Form";
 function App() {
-  const [todoList, setTodoList] = useState([
-    {taskName: "React useState", id: 0, isCompleted: true},
-    {taskName: "React useEffect", id: 1, isCompleted: false},
-    {taskName: "React CRUD", id:2 , isCompleted: true}
-
-  ]);
+  const [todoList, setTodoList] = useState([]);
   const [todo, setTodo] = useState("");
-
-
 
   const inputChangeHandler = (e) => {
     setTodo(e.target.value);
