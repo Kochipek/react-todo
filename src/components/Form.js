@@ -7,12 +7,13 @@ const Form = (props) => {
     <div className="todoApp">
       <h1>Todo List</h1>
       <div className="addTask">
-    <form onSubmit={addTask}>
-      <input type="text" value={todo} onChange={inputChangeHandler} />
-      <button type="submit">Add Task</button>
-    </form>
+        <form onSubmit={addTask}>
+          <input type="text" value={todo} onChange={inputChangeHandler} />
+          <button type="submit">Add Task</button>
+        </form>
+      </div>
     </div>
-    </div>
-  )};
+  );
+};
 
-    export default Form;
+export default Form;
